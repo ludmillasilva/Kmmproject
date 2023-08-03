@@ -5,19 +5,19 @@ plugins {
 
 android {
     namespace = "com.ludmilla.kmmproject.android"
-    compileSdk = 32
+    compileSdk = Playstore.compileSdk
     defaultConfig {
         applicationId = "com.ludmilla.kmmproject.android"
         minSdk = Playstore.minSdk
-        targetSdk = 32
-        versionCode = 1
-        versionName = "1.0"
+        targetSdk = Playstore.targetSdk
+        versionCode = Playstore.versionCode
+        versionName = Playstore.versionName
     }
     buildFeatures {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.3.0"
+        kotlinCompilerExtensionVersion = Versions.composeCompiler
     }
     packagingOptions {
         resources {
